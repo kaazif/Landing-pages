@@ -1,0 +1,193 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-color: #0e0e0e;
+  font-family: "Comfortaa", cursive;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+/* ----main styles---- */
+i {
+  font-size: 0.9rem;
+}
+i:last-child {
+  color: gray;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+#logo {
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+.card {
+  background-color: #eee;
+  border-radius: 2.5rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+  width: 20rem;
+  height: 31rem;
+  position: relative;
+}
+.card-top {
+  background-color: #f1ae04;
+  border-radius: 2.5rem 2.5rem 0 0;
+  padding: 1.5rem;
+  transition: background 0.5;
+}
+.card-title {
+  text-transform: uppercase;
+  letter-spacing: 0.11rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 200;
+}
+.card-description {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.shoes-1 {
+  position: absolute;
+  width: 19rem;
+  top: -2.5rem;
+  right: -10rem;
+  transition: transform 1s;
+}
+.shoes-2 {
+  position: absolute;
+  width: 19rem;
+  top: -6rem;
+  right: -7rem;
+  transition: transform 1s ease 0s;
+  transform: rotateZ(-40deg);
+  transition: transform 2s ease 0s;
+  display: none;
+}
+/* -----bottom section----- */
+.card-bottom {
+  padding: 1rem;
+}
+.card-bottom-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #333;
+  margin-bottom: 0.6rem;
+}
+.card-heading-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.badge {
+  background-color: #27ab78;
+  color: #fff;
+  font-size: 0.7rem;
+  width: 3rem;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  border-radius: 0.3rem;
+}
+.card-bottom-title-2 {
+  text-transform: uppercase;
+  color: rgb(164, 164, 164);
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.stars {
+  padding-top: 1rem;
+}
+.size-container {
+  margin: 5px 0;
+}
+.size {
+  display: flex;
+}
+.size-box {
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  padding: 10px;
+  margin: 15px 17px 0 0;
+  border-radius: 50%;
+  color: rgb(107, 107, 107);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active-size {
+  background-color: #25d393;
+  color: #fff;
+}
+.color h4 {
+  margin: 1rem 0;
+}
+.color-container {
+  display: flex;
+}
+.color-1 {
+  background-color: #c02244;
+  box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.color-2 {
+  background-color: #1c477a;
+  box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.price {
+  width: 10rem;
+  height: 2rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: -1rem;
+  bottom: 3rem;
+  background-color: #1c477a;
+  box-shadow: 0 1rem 2rem rgba(25, 71, 122, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: background 0.5s;
+}
+.price span {
+  font-size: 1.4rem;
+}
+.price span:first-child {
+  margin-right: 0.7rem;
+}
+.price span:last-child {
+  font-weight: bold;
+}
+/* particles-js */
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
